@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+
+body {
+    max-width: 500px;
+    margin: auto;
+    padding: 1em;
+    background-color: antiquewhite;
+    border: 3px solid salmon;
+    border-radius: 10px;
+
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+.service {
+    margin: 0.25em 0;
+    display: flex;
+    align-items: center;
+}
+
+#cars {
+    background-color:rgb(213, 142, 55);
+    border-radius: 4px;
+    color: white;
+    padding: 0.1em 0.25em;
+}
+
+#cars:hover {
+    cursor: pointer;
+}
+
+[type = "checkbox"] {
+    width: 25px;
+    height: 25px;
+    margin-right: 0.25em;
+}
+
+[type = "checkbox"]:hover {
+    cursor: pointer;
+}
+
+.btn_bill {
+    color: white;
+    background-color: rgb(171, 171, 171);
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0.25em 0.5em;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.btn_bill:hover {
+    background-color: rgb(95, 94, 94);
+    cursor: pointer;
+}
+
+.bill {
+    margin-top: 1em;
+}
+table {
+    margin: 0.25em auto;
+}
+
+table, tr, td, th {
+    border: 1px solid black;
+}
+th, td {
+    padding: 0.25em 0.5em;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Car Servicing</title>
+</head>
+<body>
+
+    <section class="options">
+        <label for="cars">Choose a Car:</label>
+
+        <select name="cars" id="cars">
+            <option value="Hatchback">Hatchback</option>
+            <option value="Sedan">Sedan</option>
+            <option value="SUV">SUV</option>
+        </select>
+    
+        <br>
+        <div class="service">
+            <input type="checkbox" id="Basic_Servicing" name="Basic Servicing" value="BS01">
+            <label for="Basic_Servicing"> Basic Servicing</label><br>
+        </div>
+        <div class="service">
+            <input type="checkbox" id="Engine_Fixing" name="Engine Fixing" value="EF01">
+            <label for="Engine_Fixing"> Engine Fixing</label><br>
+        </div>
+        <div class="service">
+            <input type="checkbox" id="Clutch_Fixing" name="Clutch Fixing" value="CF01">
+            <label for="Clutch_Fixing"> Clutch Fixing </label><br>
+        </div>
+        <div class="service">
+            <input type="checkbox" id="Brake_Fixing" name="Brake Fixing" value="BF01">
+            <label for="Brake_Fixing"> Brake Fixing</label><br>
+        </div>
+        <div class="service">
+            <input type="checkbox" id="Gear_Fixing" name="Gear Fixing " value="GF01">
+            <label for="Gear_Fixing"> Gear Fixing </label><br>
+        </div>
+        <button class="btn_bill" onclick="generate_bill()">GENERATE BILL</button>
+
+    </section>
+
+    <section class="bill">
+        <h1>BILL</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Service</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody id="bill_body">
+
+            </tbody>
+        </table>
+    </section>
+
+    <script src="./cars.js"></script>
+    <script src="./Services.js"></script>
+    <script src="./Bill.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+</html>
